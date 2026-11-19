@@ -35,21 +35,21 @@
 - [x] Personalized Home Dashboard ("My Space") with customizable activity cards, greeting, quiet mode
 - [x] Commit & push Phase 4 to GitHub
 
-## Phase 5: Educational Game Hub & 8 Phaser 3 Playable Games
-- [ ] Game database schema (games, game_categories, game_sessions, game_results, game_favorites)
-- [ ] Backend game session verification API (start session, validate progress, complete session with verified scoring)
-- [ ] Frontend Game Hub: category filtering, search, favorite toggles, difficulty indicators
-- [ ] Core Reusable Game Engine (lifecycle: CREATED -> STARTED -> IN_PROGRESS -> PAUSED -> COMPLETED)
-- [ ] Game 1: **Memory Garden** (Memory & Thinking - card matching, untimed options)
-- [ ] Game 2: **Emotion Explorer** (Emotional Awareness - facial expressions & contextual scenarios)
-- [ ] Game 3: **Word Builder** (Reading & Language - phonics & word formation, hints)
-- [ ] Game 4: **Number Garden** (Numbers & Logic - counting, visual quantity comparison, arithmetic)
-- [ ] Game 5: **Focus Garden** (Focus & Attention - selective attention, hidden patterns)
-- [ ] Game 6: **Pattern Detective** (Memory & Thinking - sequence completion, logic puzzles)
-- [ ] Game 7: **Story Builder** (Communication & Creativity - scene choices, narrative construction)
-- [ ] Game 8: **Daily Life Simulator** (Everyday Life Skills - shopping, bag packing, schedule planning)
-- [ ] Verify game session persistence and results in PostgreSQL
-- [ ] Commit & push Phase 5 to GitHub
+## Phase 5: Educational Game Hub & 8 Playable Games
+- [x] Game database schema (games, game_categories, game_sessions, game_favorites, game_achievements)
+- [x] Backend game session verification API (start session, validate progress, complete session with positive non-punitive scoring)
+- [x] Frontend Game Hub: category filtering, search, favorite toggles, difficulty indicators
+- [x] Core Reusable Game Engine & Hook (`useGameSession`, `GameContainer`, Web Audio API synthesized feedback)
+- [x] Game 1: **Memory Garden** (Working memory & visual card matching, calm untimed pacing)
+- [x] Game 2: **Emotion Explorer** (Socio-emotional awareness, feelings recognition & coping choices)
+- [x] Game 3: **Word Builder** (Phonics & spelling construction with dyslexia-friendly visual cues)
+- [x] Game 4: **Number Garden** (Visual counting, quantity comparison, and dyscalculia support)
+- [x] Game 5: **Focus Garden** (Selective attention & visual search in peaceful natural scenes)
+- [x] Game 6: **Pattern Detective** (Logical sequence deduction, shapes & rhythm mystery solving)
+- [x] Game 7: **Story Builder** (Expressive narrative builder with Web Speech API text-to-speech)
+- [x] Game 8: **Daily Life Simulator** (Executive function lab: backpack packing & calm grocery shopping)
+- [x] Unit test suite verifying all 8 games and backend game services
+- [x] Commit & push Phase 5 to GitHub
 
 ## Phase 6: Learning Corner & Daily Journey
 - [ ] Learning Module database schema (learning_contents, saved_learning_contents, categories)

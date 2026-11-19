@@ -4,7 +4,7 @@
 **NeuroNest** is an AI-powered, accessible, personalized platform for neurodiverse individuals (supporting ASD, ADHD, Dyslexia, Dyscalculia, and diverse cognitive profiles). It features an interactive learning corner, 8 educational games (Phaser 3), daily routine and task management, progress tracking, and custom accessibility settings ("My Comfort").
 
 - **Repository**: [https://github.com/vamsikiran1234/NeuroNest.git](https://github.com/vamsikiran1234/NeuroNest.git)
-- **Current Phase**: Phase 1 — Project Foundation & Setup
+- **Current Phase**: Phase 6 — Learning Corner & Daily Journey
 - **Last Updated**: 2026-11-19
 
 ---
@@ -17,8 +17,8 @@
 | **Phase 2** | Design System, Accessible Themes, Typography tokens, Radix UI Primitives | ✅ Completed |
 | **Phase 3** | Authentication & User Management (Spring Security, JWT, Refresh Tokens, Roles) | ✅ Completed |
 | **Phase 4** | Personalization & Multi-Step Onboarding (3 Presentation Profiles) | ✅ Completed |
-| **Phase 5** | Educational Game Hub & Reusable Game Engine (8 Phaser 3 Playable Games) | 🔄 In Progress |
-| **Phase 6** | Learning Corner (Text Simplification, TTS) & Daily Journey (Routines/Tasks) | ⏳ Pending |
+| **Phase 5** | Educational Game Hub & Reusable Game Engine (8 Playable Games) | ✅ Completed |
+| **Phase 6** | Learning Corner (Text Simplification, TTS) & Daily Journey (Routines/Tasks) | 🔄 Next Up |
 | **Phase 7** | Spring AI Integration (Gemini, Structured DTOs, Deterministic Fallbacks) | ⏳ Pending |
 | **Phase 8** | Guardian & Administration Dashboards (Consent, RBAC, Monitoring) | ⏳ Pending |
 | **Phase 9** | Comprehensive Testing (JUnit 5, Mockito, Vitest, Playwright, Accessibility Checks) | ⏳ Pending |

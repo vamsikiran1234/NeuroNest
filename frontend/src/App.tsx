@@ -7,6 +7,8 @@ import { RegisterPage } from './pages/auth/RegisterPage';
 import { ForgotPasswordPage } from './pages/auth/ForgotPasswordPage';
 import { OnboardingPage } from './pages/onboarding/OnboardingPage';
 import { DashboardPage } from './pages/dashboard/DashboardPage';
+import { GameHubPage } from './pages/games/GameHubPage';
+import { GamePlayPage } from './pages/games/GamePlayPage';
 import { ProtectedRoute } from './components/auth/ProtectedRoute';
 import { useAccessibilityStore } from './stores/accessibilityStore';
 
@@ -63,7 +65,8 @@ export default function App() {
           }
         >
           <Route index element={<DashboardPage />} />
-          <Route path="games" element={<PlaceholderPage title="Play & Explore" icon="🎮" description="Discover 8 calm educational games for skills and focus." />} />
+          <Route path="games" element={<GameHubPage />} />
+          <Route path="games/:gameId" element={<GamePlayPage />} />
           <Route path="learning" element={<PlaceholderPage title="Learning Corner" icon="📖" description="Accessible reading, section-by-section breakdown, and simplification." />} />
           <Route path="routines" element={<PlaceholderPage title="Daily Journey" icon="📅" description="Organize routines, checklist tasks, and visual timelines without stress." />} />
           <Route path="progress" element={<PlaceholderPage title="My Growth" icon="📈" description="Celebrate your learning journey and personal exploration." />} />
