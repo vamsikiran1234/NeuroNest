@@ -19,13 +19,13 @@
 - [x] Commit & push Phase 2 to GitHub
 
 ## Phase 3: Authentication & User Management
-- [ ] Implement database schema with Flyway (users, roles, user_roles, refresh_tokens, audit_logs)
-- [ ] Spring Security configuration with JWT authentication and BCrypt
-- [ ] Auth endpoints: Register, Login, Refresh, Logout, Forgot Password, Reset Password
-- [ ] Role-Based Access Control (USER, PARENT_OR_GUARDIAN, ADMIN)
-- [ ] Frontend Auth state (Zustand + TanStack Query), login/register forms with React Hook Form + Zod
-- [ ] Route guards for protected, guardian, and admin routes
-- [ ] Commit & push Phase 3 to GitHub
+- [x] Implement database schema with Flyway (users, roles, user_roles, refresh_tokens, audit_logs)
+- [x] Spring Security configuration with JWT authentication and BCrypt
+- [x] Auth endpoints: Register, Login, Refresh, Logout, Forgot Password, Reset Password
+- [x] Role-Based Access Control (USER, PARENT_OR_GUARDIAN, ADMIN)
+- [x] Frontend Auth state (Zustand + TanStack Query), login/register forms with React Hook Form + Zod
+- [x] Route guards for protected, guardian, and admin routes
+- [x] Commit & push Phase 3 to GitHub
 
 ## Phase 4: Personalization & Onboarding
 - [ ] Database schema for user_profiles, user_preferences, accessibility_settings, user_goals

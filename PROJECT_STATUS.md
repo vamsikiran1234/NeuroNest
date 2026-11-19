@@ -15,8 +15,8 @@
 |-------|-------------|--------|
 | **Phase 1** | Project Foundation, Monorepo Setup (Frontend + Backend + PostgreSQL + Docker Compose), Git Init | ✅ Completed |
 | **Phase 2** | Design System, Accessible Themes, Typography tokens, Radix UI Primitives | ✅ Completed |
-| **Phase 3** | Authentication & User Management (Spring Security, JWT, Refresh Tokens, Roles) | 🔄 In Progress |
-| **Phase 4** | Personalization & Multi-Step Onboarding (3 Presentation Profiles) | ⏳ Pending |
+| **Phase 3** | Authentication & User Management (Spring Security, JWT, Refresh Tokens, Roles) | ✅ Completed |
+| **Phase 4** | Personalization & Multi-Step Onboarding (3 Presentation Profiles) | 🔄 In Progress |
 | **Phase 5** | Educational Game Hub & Reusable Game Engine (8 Phaser 3 Playable Games) | ⏳ Pending |
 | **Phase 6** | Learning Corner (Text Simplification, TTS) & Daily Journey (Routines/Tasks) | ⏳ Pending |
 | **Phase 7** | Spring AI Integration (Gemini, Structured DTOs, Deterministic Fallbacks) | ⏳ Pending |
