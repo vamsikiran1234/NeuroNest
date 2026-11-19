@@ -12,6 +12,7 @@ import { GamePlayPage } from './pages/games/GamePlayPage';
 import { LearningCornerPage } from './pages/learning/LearningCornerPage';
 import { RoutinesPage } from './pages/routines/RoutinesPage';
 import { ProgressPage } from './pages/progress/ProgressPage';
+import { AIAssistantPage } from './pages/assistant/AIAssistantPage';
 import { ProtectedRoute } from './components/auth/ProtectedRoute';
 import { useAccessibilityStore } from './stores/accessibilityStore';
 
@@ -73,7 +74,7 @@ export default function App() {
           <Route path="learning" element={<LearningCornerPage />} />
           <Route path="routines" element={<RoutinesPage />} />
           <Route path="progress" element={<ProgressPage />} />
-          <Route path="assistant" element={<PlaceholderPage title="AI Learning Guide" icon="✨" description="Optional gentle assistant to clarify questions and break down tasks." />} />
+          <Route path="assistant" element={<AIAssistantPage />} />
           <Route path="comfort" element={<ComfortPage />} />
         </Route>
 

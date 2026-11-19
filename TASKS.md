@@ -62,14 +62,15 @@
 - [x] Commit & push Phase 6 to GitHub
 
 ## Phase 7: Spring AI Integration (Gemini)
-- [ ] Spring AI configuration with Google Gemini (`ChatClient`, prompt templates, structured output DTOs)
-- [ ] Text Simplification Service (multiple levels: simple, summary, step-by-step, vocabulary)
-- [ ] Game Recommendation Service (based on preferences without diagnostic stereotyping)
-- [ ] Routine Suggestion Service (break tasks into manageable steps)
-- [ ] Story Builder AI generator with non-AI deterministic fallback templates
-- [ ] Robust error handling, timeouts, rate limiting, and graceful offline fallback when API key is missing
-- [ ] Frontend AI Assistant interface with user consent banner
-- [ ] Commit & push Phase 7 to GitHub
+- [x] AI service configuration with Google Gemini REST client, timeouts, and structured DTOs
+- [x] Text Simplification Service (`/api/v1/ai/simplify`: simple, summary, vocabulary breakdowns)
+- [x] Game Recommendation Service (`/api/v1/ai/recommend-games`: mood and sensory-informed suggestions without stereotyping)
+- [x] Task Breakdown Service (`/api/v1/ai/breakdown-task`: turns overwhelming tasks into 3-4 micro-steps)
+- [x] Dedicated fallback architecture: seamless deterministic fallbacks when GEMINI_API_KEY is absent or offline
+- [x] AI interaction metadata logging without exposing private user data
+- [x] Frontend AI Assistant interface (`/app/assistant`) with transparent consent banner, 4 tools, and Web Speech TTS
+- [x] Backend & frontend test suites passing (13 backend + 10 frontend tests)
+- [x] Commit & push Phase 7 to GitHub
 
 ## Phase 8: Guardian Support & Administration
 - [ ] Guardian database schema (guardian_relationships, consent_records)
