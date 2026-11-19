@@ -321,7 +321,7 @@ export function OnboardingPage() {
                     <span className="text-sm font-semibold text-foreground">{goal}</span>
                     <div
                       className={`w-5 h-5 rounded-md border flex items-center justify-center ${
-                        isSelected ? 'bg-primary border-primary text-white' : 'border-muted-foreground'
+                        isSelected ? 'bg-primary border-primary text-primary-foreground' : 'border-muted-foreground'
                       }`}
                     >
                       {isSelected && <Check className="w-3.5 h-3.5" />}

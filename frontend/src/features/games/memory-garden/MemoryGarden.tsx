@@ -132,7 +132,7 @@ export function MemoryGarden() {
           <button
             onClick={() => setNumPairs(4)}
             className={`px-3 py-1 rounded-xl font-bold border transition-all ${
-              numPairs === 4 ? 'bg-primary text-white border-primary' : 'bg-card border-border hover:bg-cream-100'
+              numPairs === 4 ? 'bg-primary text-primary-foreground border-primary shadow-sm' : 'bg-card border-border hover:bg-cream-100 text-foreground'
             }`}
           >
             4 Pairs (8 cards)
@@ -140,7 +140,7 @@ export function MemoryGarden() {
           <button
             onClick={() => setNumPairs(6)}
             className={`px-3 py-1 rounded-xl font-bold border transition-all ${
-              numPairs === 6 ? 'bg-primary text-white border-primary' : 'bg-card border-border hover:bg-cream-100'
+              numPairs === 6 ? 'bg-primary text-primary-foreground border-primary shadow-sm' : 'bg-card border-border hover:bg-cream-100 text-foreground'
             }`}
           >
             6 Pairs (12 cards)
@@ -148,7 +148,7 @@ export function MemoryGarden() {
           <button
             onClick={() => setNumPairs(8)}
             className={`px-3 py-1 rounded-xl font-bold border transition-all ${
-              numPairs === 8 ? 'bg-primary text-white border-primary' : 'bg-card border-border hover:bg-cream-100'
+              numPairs === 8 ? 'bg-primary text-primary-foreground border-primary shadow-sm' : 'bg-card border-border hover:bg-cream-100 text-foreground'
             }`}
           >
             8 Pairs (16 cards)

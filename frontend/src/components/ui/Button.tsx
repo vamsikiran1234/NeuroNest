@@ -15,12 +15,12 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
       'inline-flex items-center justify-center font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none select-none rounded-xl';
 
     const variants = {
-      primary: 'bg-primary text-primary-foreground hover:opacity-90 shadow-sm active:scale-[0.98]',
+      primary: 'bg-primary text-primary-foreground font-semibold hover:opacity-90 shadow-sm active:scale-[0.98]',
       secondary: 'bg-secondary text-secondary-foreground hover:bg-cream-300 active:scale-[0.98]',
       outline: 'border-2 border-border bg-transparent hover:bg-cream-100 text-foreground active:scale-[0.98]',
       ghost: 'bg-transparent hover:bg-cream-200 text-foreground',
-      soft: 'bg-sage-100 text-sage-700 hover:bg-sage-200 active:scale-[0.98]',
-      danger: 'bg-peach-500 text-white hover:bg-peach-500/90 shadow-sm active:scale-[0.98]',
+      soft: 'bg-sage-100 text-sage-800 hover:bg-sage-200 font-medium active:scale-[0.98]',
+      danger: 'bg-peach-600 text-white font-medium hover:bg-peach-700 shadow-sm active:scale-[0.98]',
     };
 
     const sizes = {

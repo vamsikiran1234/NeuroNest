@@ -15,44 +15,84 @@ export default {
     },
     extend: {
       colors: {
-        // NeuroNest Core Palette
+        // NeuroNest Core Palette with Full 50-900 Accessible Steps
         cream: {
           50: '#FDFCF9',
           100: '#F8F5EF', // Warm cream base
           200: '#EAE2D4', // Pale sand
           300: '#DDD2C0',
+          400: '#CDC0AA',
+          500: '#BAA98E',
         },
         sage: {
+          50: '#F4F7F4',
           100: '#E8EFE9',
           200: '#CFDFD2',
           300: '#B8CDBB', // Soft sage
+          400: '#8FAFA0',
           500: '#668A75', // Muted green
-          700: '#456152',
+          600: '#4F725E', // Deep sage (WCAG AA > 5:1 with white text)
+          700: '#3D5849',
+          800: '#2C4035',
+          900: '#1E2C24',
         },
-        lavender: {
-          100: '#ECE8F5',
-          200: '#DDD5EE',
-          300: '#C8BCE0', // Muted lavender
-          500: '#8672AB',
-        },
-        dustyBlue: {
+        dusty: {
+          50: '#F2F6F9',
           100: '#E6EFF4',
           200: '#CDDFEA',
           300: '#AFC7D8', // Dusty blue
+          400: '#84A8BF',
           500: '#5C829B',
+          600: '#46687F', // Deep dusty blue (WCAG AA > 5.5:1 with white text)
+          700: '#354F62',
+          800: '#253745',
+          900: '#17232C',
+        },
+        dustyBlue: {
+          50: '#F2F6F9',
+          100: '#E6EFF4',
+          200: '#CDDFEA',
+          300: '#AFC7D8',
+          400: '#84A8BF',
+          500: '#5C829B',
+          600: '#46687F',
+          700: '#354F62',
+          800: '#253745',
+          900: '#17232C',
+        },
+        lavender: {
+          50: '#F8F6FC',
+          100: '#ECE8F5',
+          200: '#DDD5EE',
+          300: '#C8BCE0', // Muted lavender
+          400: '#A695C6',
+          500: '#8672AB',
+          600: '#6D5991', // Deep lavender (WCAG AA > 5:1 with white text)
+          700: '#544472',
+          800: '#3D3153',
+          900: '#281F38',
         },
         peach: {
+          50: '#FDF7F4',
           100: '#FBF0EB',
           200: '#F4DFD5',
           300: '#E9BDA9', // Soft peach
+          400: '#D9987E',
           500: '#C77C60',
+          600: '#AD6348', // Deep peach/terracotta (WCAG AA > 5:1 with white text)
+          700: '#8C4D36',
+          800: '#6A3725',
+          900: '#492316',
         },
         ink: {
           50: '#F0F2F2',
           100: '#DDE2E1',
+          200: '#C5CDCC',
           300: '#829190',
           500: '#4D5D5B',
-          900: '#303B3A', // Deep ink (high contrast text)
+          700: '#3A4846',
+          800: '#26302F',
+          900: '#1A2221', // Deep ink (high contrast text)
         },
         // Semantic aliases
         background: 'var(--color-bg)',

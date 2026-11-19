@@ -6,12 +6,12 @@
   :root {
     --radius: 0.75rem;
 
-    /* Default Theme: Warm Cream */
+    /* Default Theme: Warm Cream with High Contrast Primary */
     --color-bg: #F8F5EF;
     --color-text: #303B3A;
     --color-card: #FFFFFF;
     --color-card-text: #303B3A;
-    --color-primary: #668A75;
+    --color-primary: #476B57;
     --color-primary-text: #FFFFFF;
     --color-secondary: #EAE2D4;
     --color-secondary-text: #303B3A;
