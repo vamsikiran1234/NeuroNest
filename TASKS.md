@@ -35,59 +35,57 @@
 - [x] Personalized Home Dashboard ("My Space") with customizable activity cards, greeting, quiet mode
 - [x] Commit & push Phase 4 to GitHub
 
-## Phase 5: Educational Game Hub & 8 Playable Games
-- [x] Game database schema (games, game_categories, game_sessions, game_favorites, game_achievements)
-- [x] Backend game session verification API (start session, validate progress, complete session with positive non-punitive scoring)
-- [x] Frontend Game Hub: category filtering, search, favorite toggles, difficulty indicators
-- [x] Core Reusable Game Engine & Hook (`useGameSession`, `GameContainer`, Web Audio API synthesized feedback)
-- [x] Game 1: **Memory Garden** (Working memory & visual card matching, calm untimed pacing)
-- [x] Game 2: **Emotion Explorer** (Socio-emotional awareness, feelings recognition & coping choices)
-- [x] Game 3: **Word Builder** (Phonics & spelling construction with dyslexia-friendly visual cues)
-- [x] Game 4: **Number Garden** (Visual counting, quantity comparison, and dyscalculia support)
-- [x] Game 5: **Focus Garden** (Selective attention & visual search in peaceful natural scenes)
-- [x] Game 6: **Pattern Detective** (Logical sequence deduction, shapes & rhythm mystery solving)
-- [x] Game 7: **Story Builder** (Expressive narrative builder with Web Speech API text-to-speech)
-- [x] Game 8: **Daily Life Simulator** (Executive function lab: backpack packing & calm grocery shopping)
-- [x] Unit test suite verifying all 8 games and backend game services
-- [x] Commit & push Phase 5 to GitHub
+## Phase 5: Educational Game Hub & 8 Phaser 3 Playable Games
+- [ ] Game database schema (games, game_categories, game_sessions, game_results, game_favorites)
+- [ ] Backend game session verification API (start session, validate progress, complete session with verified scoring)
+- [ ] Frontend Game Hub: category filtering, search, favorite toggles, difficulty indicators
+- [ ] Core Reusable Game Engine (lifecycle: CREATED -> STARTED -> IN_PROGRESS -> PAUSED -> COMPLETED)
+- [ ] Game 1: **Memory Garden** (Memory & Thinking - card matching, untimed options)
+- [ ] Game 2: **Emotion Explorer** (Emotional Awareness - facial expressions & contextual scenarios)
+- [ ] Game 3: **Word Builder** (Reading & Language - phonics & word formation, hints)
+- [ ] Game 4: **Number Garden** (Numbers & Logic - counting, visual quantity comparison, arithmetic)
+- [ ] Game 5: **Focus Garden** (Focus & Attention - selective attention, hidden patterns)
+- [ ] Game 6: **Pattern Detective** (Memory & Thinking - sequence completion, logic puzzles)
+- [ ] Game 7: **Story Builder** (Communication & Creativity - scene choices, narrative construction)
+- [ ] Game 8: **Daily Life Simulator** (Everyday Life Skills - shopping, bag packing, schedule planning)
+- [ ] Verify game session persistence and results in PostgreSQL
+- [ ] Commit & push Phase 5 to GitHub
 
 ## Phase 6: Learning Corner & Daily Journey
-- [x] Learning Module database schema (learning_contents, saved_learning_contents, categories, Flyway seed V2)
-- [x] Learning Corner UI (reading layouts, simplified mode toggle, Web Speech API TTS, key vocabulary cards)
-- [x] Daily Journey database schema (routines, routine_steps, user_tasks)
-- [x] Routine & Task Management API (CRUD operations, auto-seeding starter routines, step toggle, reset)
-- [x] Interactive task planner with visual timeline, daily checklist, positive reinforcement & sound chimes
-- [x] My Growth Progress Dashboard (Recharts weekly mindful engagement, multi-dimensional skills radar, celebrated milestones)
-- [x] Unit test suites for Learning, Routines, and Frontend views (10 backend + 8 frontend tests passing)
-- [x] Commit & push Phase 6 to GitHub
+- [ ] Learning Module database schema (learning_contents, saved_learning_contents, categories)
+- [ ] Learning Corner UI (reading layouts, section-by-section breakdown, Web Speech API TTS & STT)
+- [ ] Daily Journey database schema (routines, routine_steps, user_tasks, task_reminders)
+- [ ] Routine & Task Management API (CRUD operations, reordering, step breakdown)
+- [ ] Interactive task planner with visual timeline, daily checklist, positive reinforcement
+- [ ] My Growth Progress Dashboard (Recharts visual summaries, streaks, non-competitive milestone cards)
+- [ ] Commit & push Phase 6 to GitHub
 
 ## Phase 7: Spring AI Integration (Gemini)
-- [x] AI service configuration with Google Gemini REST client, timeouts, and structured DTOs
-- [x] Text Simplification Service (`/api/v1/ai/simplify`: simple, summary, vocabulary breakdowns)
-- [x] Game Recommendation Service (`/api/v1/ai/recommend-games`: mood and sensory-informed suggestions without stereotyping)
-- [x] Task Breakdown Service (`/api/v1/ai/breakdown-task`: turns overwhelming tasks into 3-4 micro-steps)
-- [x] Dedicated fallback architecture: seamless deterministic fallbacks when GEMINI_API_KEY is absent or offline
-- [x] AI interaction metadata logging without exposing private user data
-- [x] Frontend AI Assistant interface (`/app/assistant`) with transparent consent banner, 4 tools, and Web Speech TTS
-- [x] Backend & frontend test suites passing (13 backend + 10 frontend tests)
-- [x] Commit & push Phase 7 to GitHub
+- [ ] Spring AI configuration with Google Gemini (`ChatClient`, prompt templates, structured output DTOs)
+- [ ] Text Simplification Service (multiple levels: simple, summary, step-by-step, vocabulary)
+- [ ] Game Recommendation Service (based on preferences without diagnostic stereotyping)
+- [ ] Routine Suggestion Service (break tasks into manageable steps)
+- [ ] Story Builder AI generator with non-AI deterministic fallback templates
+- [ ] Robust error handling, timeouts, rate limiting, and graceful offline fallback when API key is missing
+- [ ] Frontend AI Assistant interface with user consent banner
+- [ ] Commit & push Phase 7 to GitHub
 
 ## Phase 8: Guardian Support & Administration
-- [x] Guardian database schema & entities (`guardian_relationships`, `consent_records`)
-- [x] Guardian service & portal (child account linking, consent management, activity summary review)
-- [x] Child privacy safeguards (privacy controls, no raw conversation or creative thought leakage)
-- [x] Admin dashboard & service (user directory, system overview telemetry, infrastructure health monitoring)
-- [x] Security audit logging & RBAC security enforcement (`ROLE_ADMIN`, `ROLE_PARENT_OR_GUARDIAN`, `ROLE_USER`)
-- [x] Backend & frontend test suites passing (16 backend + 10 frontend tests)
-- [x] Commit & push Phase 8 to GitHub
+- [ ] Guardian database schema (guardian_relationships, consent_records)
+- [ ] Guardian portal (child account linking, consent management, activity summary review, goal setting)
+- [ ] Child privacy safeguards (privacy controls, no raw conversation leakage)
+- [ ] Admin dashboard (user management, game catalog management, content management, audit logs, health monitoring)
+- [ ] Admin RBAC security enforcement
+- [ ] Commit & push Phase 8 to GitHub
 
 ## Phase 9: Testing, Accessibility & Security Verification
-- [x] Backend unit test suite (16 tests passing across Auth, AI, Games, Guardian, Learning, and Routines)
-- [x] Frontend unit test suite (16 tests passing across Auth, Accessibility, Games, Learning/Routines, AI, and Guardian)
-- [x] Accessibility verification (WCAG AA contrast, Atkinson/OpenDyslexic fonts, reading ruler, reduced motion, quiet mode)
-- [x] Responsive layout verification across desktop sidebar and mobile bottom navigation
-- [x] Security verification (BCrypt password hashing, JWT stateless access tokens, HttpOnly refresh cookies, RBAC, child privacy guarantees)
-- [x] Commit & push Phase 9 to GitHub
+- [ ] Backend unit & integration tests (JUnit 5, Mockito, Spring Security tests)
+- [ ] Frontend unit tests with Vitest (components, stores, utility functions)
+- [ ] End-to-end user journey tests with Playwright
+- [ ] Accessibility audit (WCAG AA contrast, keyboard accessibility, ARIA attributes, reduced motion)
+- [ ] Responsive design verification (desktop, tablet, mobile layouts)
+- [ ] Fix any discovered defects or edge cases
+- [ ] Commit & push Phase 9 to GitHub
 
 ## Phase 10: Documentation & Deployment
 - [ ] Complete root `README.md` with system overview, architecture diagrams, setup guide
