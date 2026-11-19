@@ -18,21 +18,6 @@ import { AdminDashboardPage } from './pages/admin/AdminDashboardPage';
 import { ProtectedRoute } from './components/auth/ProtectedRoute';
 import { useAccessibilityStore } from './stores/accessibilityStore';
 
-// Temporary placeholders for navigation testing
-function PlaceholderPage({ title, icon, description }: { title: string; icon: string; description: string }) {
-  return (
-    <div className="space-y-4 animate-in fade-in-50 duration-200">
-      <div className="flex items-center gap-3">
-        <span className="text-3xl p-3 rounded-2xl bg-cream-200">{icon}</span>
-        <div>
-          <h1 className="text-2xl font-bold font-sans tracking-tight text-foreground">{title}</h1>
-          <p className="text-sm text-muted-foreground">{description}</p>
-        </div>
-      </div>
-    </div>
-  );
-}
-
 export default function App() {
   const applyToDOM = useAccessibilityStore((s) => s.applyToDOM);
 

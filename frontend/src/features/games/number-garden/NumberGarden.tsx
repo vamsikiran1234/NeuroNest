@@ -116,14 +116,17 @@ export function NumberGarden() {
             {puzzle.secondItems && (
               <>
                 <span className="text-2xl font-bold text-muted-foreground px-2">+</span>
-                {Array.from({ length: puzzle.secondItems.count }).map((_, i) => (
-                  <span
-                    key={`item-2-${i}`}
-                    className="text-3xl sm:text-4xl p-2 rounded-2xl bg-white shadow-sm transition-transform hover:scale-110 select-none animate-in zoom-in-75 duration-150"
-                  >
-                    {puzzle.secondItems?.emoji}
-                  </span>
-                ))}
+                {Array.from({ length: puzzle.secondItems.count }).map((_, i) => {
+                  const emoji = puzzle.secondItems?.emoji ?? '🌸';
+                  return (
+                    <span
+                      key={`item-2-${i}`}
+                      className="text-3xl sm:text-4xl p-2 rounded-2xl bg-white shadow-sm transition-transform hover:scale-110 select-none animate-in zoom-in-75 duration-150"
+                    >
+                      {emoji}
+                    </span>
+                  );
+                })}
               </>
             )}
           </div>
@@ -181,3 +184,4 @@ export function NumberGarden() {
     </GameContainer>
   );
 }
+

@@ -1,6 +1,7 @@
 # Local Tools & Local Maven Repo
 .tools/
 .m2/
+.pgdata/
 
 # OS files
 Thumbs.db

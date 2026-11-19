@@ -89,7 +89,7 @@ class SoundManager {
     });
   }
 
-  // Convenient aliases
+  // Aliases for convenience
   playFlip(volume = 0.5) {
     this.playCardFlip(volume);
   }
@@ -104,3 +104,4 @@ class SoundManager {
 }
 
 export const soundManager = new SoundManager();
+
