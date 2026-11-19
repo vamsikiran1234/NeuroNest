@@ -255,8 +255,9 @@ class GameServiceTest {
         @Override public List<GameSession> findByUserIdOrderByStartedAtDesc(UUID userId) {
             return store.values().stream().filter(s -> s.getUser().getId().equals(userId)).toList();
         }
-        @Override public List<GameSession> findByUserIdAndGameIdOrderByStartedAtDesc(UUID userId, String gameId) {
-            return store.values().stream().filter(s -> s.getUser().getId().equals(userId) && s.getGame().getId().equals(gameId)).toList();
+        @Override public Page<GameSession> findByUserIdOrderByStartedAtDesc(UUID userId, Pageable pageable) {
+            List<GameSession> filtered = store.values().stream().filter(s -> s.getUser().getId().equals(userId)).toList();
+            return new PageImpl<>(filtered, pageable, filtered.size());
         }
         @Override public long countByUserIdAndStatus(UUID userId, String status) {
             return store.values().stream().filter(s -> s.getUser().getId().equals(userId) && status.equalsIgnoreCase(s.getStatus())).count();
@@ -301,9 +302,6 @@ class GameServiceTest {
 
         @Override public List<GameFavorite> findByUserId(UUID userId) {
             return favorites.stream().filter(f -> f.getUserId().equals(userId)).toList();
-        }
-        @Override public Optional<GameFavorite> findByUserIdAndGameId(UUID userId, String gameId) {
-            return favorites.stream().filter(f -> f.getUserId().equals(userId) && f.getGameId().equals(gameId)).findFirst();
         }
         @Override public boolean existsByUserIdAndGameId(UUID userId, String gameId) {
             return favorites.stream().anyMatch(f -> f.getUserId().equals(userId) && f.getGameId().equals(gameId));

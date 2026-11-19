@@ -52,13 +52,14 @@
 - [x] Commit & push Phase 5 to GitHub
 
 ## Phase 6: Learning Corner & Daily Journey
-- [ ] Learning Module database schema (learning_contents, saved_learning_contents, categories)
-- [ ] Learning Corner UI (reading layouts, section-by-section breakdown, Web Speech API TTS & STT)
-- [ ] Daily Journey database schema (routines, routine_steps, user_tasks, task_reminders)
-- [ ] Routine & Task Management API (CRUD operations, reordering, step breakdown)
-- [ ] Interactive task planner with visual timeline, daily checklist, positive reinforcement
-- [ ] My Growth Progress Dashboard (Recharts visual summaries, streaks, non-competitive milestone cards)
-- [ ] Commit & push Phase 6 to GitHub
+- [x] Learning Module database schema (learning_contents, saved_learning_contents, categories, Flyway seed V2)
+- [x] Learning Corner UI (reading layouts, simplified mode toggle, Web Speech API TTS, key vocabulary cards)
+- [x] Daily Journey database schema (routines, routine_steps, user_tasks)
+- [x] Routine & Task Management API (CRUD operations, auto-seeding starter routines, step toggle, reset)
+- [x] Interactive task planner with visual timeline, daily checklist, positive reinforcement & sound chimes
+- [x] My Growth Progress Dashboard (Recharts weekly mindful engagement, multi-dimensional skills radar, celebrated milestones)
+- [x] Unit test suites for Learning, Routines, and Frontend views (10 backend + 8 frontend tests passing)
+- [x] Commit & push Phase 6 to GitHub
 
 ## Phase 7: Spring AI Integration (Gemini)
 - [ ] Spring AI configuration with Google Gemini (`ChatClient`, prompt templates, structured output DTOs)

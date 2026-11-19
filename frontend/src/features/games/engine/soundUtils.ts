@@ -88,6 +88,19 @@ class SoundManager {
       osc.stop(ctx.currentTime + idx * 0.12 + 0.5);
     });
   }
+
+  // Convenient aliases
+  playFlip(volume = 0.5) {
+    this.playCardFlip(volume);
+  }
+
+  playMatch(volume = 0.5) {
+    this.playMatchSuccess(volume);
+  }
+
+  playCelebration(volume = 0.5) {
+    this.playCompletionCelebration(volume);
+  }
 }
 
 export const soundManager = new SoundManager();
