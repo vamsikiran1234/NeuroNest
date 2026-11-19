@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:neuronest_test;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE;MODE=PostgreSQL
+    username: sa
+    password: 
+    driver-class-name: org.h2.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: false
+    database-platform: org.hibernate.dialect.H2Dialect
+  flyway:
+    enabled: false
+
+neuronest:
+  jwt:
+    secret: 4c87b8f9e6d3a2b1c0e9f8a7b6c5d4e3f2a1b0c9d8e7f6a5b4c3d2e1f0a9b8c7
+    expiration-ms: 60000
+    refresh-expiration-ms: 120000

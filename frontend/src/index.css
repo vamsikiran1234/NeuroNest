@@ -1,0 +1,175 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 0.75rem;
+
+    /* Default Theme: Warm Cream */
+    --color-bg: #F8F5EF;
+    --color-text: #303B3A;
+    --color-card: #FFFFFF;
+    --color-card-text: #303B3A;
+    --color-primary: #668A75;
+    --color-primary-text: #FFFFFF;
+    --color-secondary: #EAE2D4;
+    --color-secondary-text: #303B3A;
+    --color-muted: #E2DBD0;
+    --color-muted-text: #5C6A68;
+    --color-accent: #C8BCE0;
+    --color-accent-text: #2D2342;
+    --color-border: #E5DDD0;
+
+    /* Accessibility Typography Defaults */
+    --font-base-size: 16px;
+    --line-height-factor: 1.6;
+    --letter-spacing-val: 0.01em;
+  }
+
+  /* Theme: Soft Sage */
+  .theme-soft-sage {
+    --color-bg: #F2F7F3;
+    --color-text: #28382F;
+    --color-card: #FFFFFF;
+    --color-card-text: #28382F;
+    --color-primary: #527A62;
+    --color-primary-text: #FFFFFF;
+    --color-secondary: #CFDFD2;
+    --color-secondary-text: #28382F;
+    --color-muted: #D9E6DC;
+    --color-muted-text: #4E6356;
+    --color-accent: #B8CDBB;
+    --color-accent-text: #1E3326;
+    --color-border: #CCE0D1;
+  }
+
+  /* Theme: Muted Lavender */
+  .theme-muted-lavender {
+    --color-bg: #F6F4FA;
+    --color-text: #312A3E;
+    --color-card: #FFFFFF;
+    --color-card-text: #312A3E;
+    --color-primary: #7E6B9E;
+    --color-primary-text: #FFFFFF;
+    --color-secondary: #DDD5EE;
+    --color-secondary-text: #312A3E;
+    --color-muted: #E5DFEE;
+    --color-muted-text: #5D546F;
+    --color-accent: #C8BCE0;
+    --color-accent-text: #251B38;
+    --color-border: #DCD3EC;
+  }
+
+  /* Theme: Dusty Blue */
+  .theme-dusty-blue {
+    --color-bg: #F2F6F9;
+    --color-text: #25333D;
+    --color-card: #FFFFFF;
+    --color-card-text: #25333D;
+    --color-primary: #557991;
+    --color-primary-text: #FFFFFF;
+    --color-secondary: #CDDFEA;
+    --color-secondary-text: #25333D;
+    --color-muted: #D9E5ED;
+    --color-muted-text: #4E606D;
+    --color-accent: #AFC7D8;
+    --color-accent-text: #192731;
+    --color-border: #C8D9E3;
+  }
+
+  /* Theme: High Contrast */
+  .theme-high-contrast {
+    --color-bg: #FFFFFF;
+    --color-text: #000000;
+    --color-card: #FFFFFF;
+    --color-card-text: #000000;
+    --color-primary: #004D40;
+    --color-primary-text: #FFFFFF;
+    --color-secondary: #E0E0E0;
+    --color-secondary-text: #000000;
+    --color-muted: #F0F0F0;
+    --color-muted-text: #111111;
+    --color-accent: #FFD54F;
+    --color-accent-text: #000000;
+    --color-border: #000000;
+  }
+
+  /* Theme: Dark */
+  .theme-dark {
+    --color-bg: #1B2120;
+    --color-text: #F1F4F3;
+    --color-card: #242D2C;
+    --color-card-text: #F1F4F3;
+    --color-primary: #7CA68E;
+    --color-primary-text: #141A19;
+    --color-secondary: #35403E;
+    --color-secondary-text: #F1F4F3;
+    --color-muted: #2E3735;
+    --color-muted-text: #96A3A1;
+    --color-accent: #9A8BB8;
+    --color-accent-text: #FFFFFF;
+    --color-border: #384543;
+  }
+
+  /* Accessibility Font Sizes */
+  body.font-size-small { font-size: 14px; }
+  body.font-size-medium { font-size: 16px; }
+  body.font-size-large { font-size: 18px; }
+  body.font-size-xlarge { font-size: 21px; }
+
+  /* Accessibility Line Spacing */
+  body.spacing-normal { line-height: 1.5; }
+  body.spacing-relaxed { line-height: 1.75; }
+  body.spacing-loose { line-height: 2.1; }
+
+  /* Accessibility Letter Spacing */
+  body.letter-normal { letter-spacing: normal; }
+  body.letter-wide { letter-spacing: 0.05em; }
+  body.letter-wider { letter-spacing: 0.1em; }
+
+  /* Font Families */
+  body.font-atkinson { font-family: 'Atkinson Hyperlegible', sans-serif; }
+  body.font-nunito { font-family: 'Nunito Sans', sans-serif; }
+  body.font-dyslexic { font-family: 'OpenDyslexic', 'Comic Sans MS', sans-serif; }
+  body.font-system { font-family: system-ui, -apple-system, sans-serif; }
+
+  /* Reduced Motion Override */
+  body.reduced-motion *,
+  body.reduced-motion *::before,
+  body.reduced-motion *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  /* Accessible Focus Rings */
+  *:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+
+  /* Quiet Mode */
+  body.quiet-mode .non-essential-visual {
+    opacity: 0.4;
+    filter: grayscale(40%);
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-muted);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primary);
+}
