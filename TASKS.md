@@ -28,12 +28,12 @@
 - [x] Commit & push Phase 3 to GitHub
 
 ## Phase 4: Personalization & Onboarding
-- [ ] Database schema for user_profiles, user_preferences, accessibility_settings, user_goals
-- [ ] Multi-step onboarding wizard (Presentation profiles: Young Explorers, Independent Learners, Everyday Companion)
-- [ ] Interests selection, goals selection, sensory/accessibility setup
-- [ ] User Profile and preferences backend API endpoints
-- [ ] Personalized Home Dashboard ("My Space") with customizable activity cards, greeting, quiet mode
-- [ ] Commit & push Phase 4 to GitHub
+- [x] Database schema for user_profiles, user_preferences, accessibility_settings, user_goals
+- [x] Multi-step onboarding wizard (Presentation profiles: Young Explorers, Independent Learners, Everyday Companion)
+- [x] Interests selection, goals selection, sensory/accessibility setup
+- [x] User Profile and preferences backend API endpoints
+- [x] Personalized Home Dashboard ("My Space") with customizable activity cards, greeting, quiet mode
+- [x] Commit & push Phase 4 to GitHub
 
 ## Phase 5: Educational Game Hub & 8 Phaser 3 Playable Games
 - [ ] Game database schema (games, game_categories, game_sessions, game_results, game_favorites)

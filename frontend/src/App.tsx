@@ -5,6 +5,8 @@ import { ComfortPage } from './pages/comfort/ComfortPage';
 import { LoginPage } from './pages/auth/LoginPage';
 import { RegisterPage } from './pages/auth/RegisterPage';
 import { ForgotPasswordPage } from './pages/auth/ForgotPasswordPage';
+import { OnboardingPage } from './pages/onboarding/OnboardingPage';
+import { DashboardPage } from './pages/dashboard/DashboardPage';
 import { ProtectedRoute } from './components/auth/ProtectedRoute';
 import { useAccessibilityStore } from './stores/accessibilityStore';
 
@@ -38,6 +40,16 @@ export default function App() {
         <Route path="/register" element={<RegisterPage />} />
         <Route path="/forgot-password" element={<ForgotPasswordPage />} />
 
+        {/* Onboarding Wizard */}
+        <Route
+          path="/onboarding"
+          element={
+            <ProtectedRoute>
+              <OnboardingPage />
+            </ProtectedRoute>
+          }
+        />
+
         {/* Redirect root to /app */}
         <Route path="/" element={<Navigate to="/app" replace />} />
 
@@ -50,7 +62,7 @@ export default function App() {
             </ProtectedRoute>
           }
         >
-          <Route index element={<PlaceholderPage title="My Space" icon="🌱" description="Your calm, personalized home dashboard." />} />
+          <Route index element={<DashboardPage />} />
           <Route path="games" element={<PlaceholderPage title="Play & Explore" icon="🎮" description="Discover 8 calm educational games for skills and focus." />} />
           <Route path="learning" element={<PlaceholderPage title="Learning Corner" icon="📖" description="Accessible reading, section-by-section breakdown, and simplification." />} />
           <Route path="routines" element={<PlaceholderPage title="Daily Journey" icon="📅" description="Organize routines, checklist tasks, and visual timelines without stress." />} />
