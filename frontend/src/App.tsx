@@ -13,6 +13,8 @@ import { LearningCornerPage } from './pages/learning/LearningCornerPage';
 import { RoutinesPage } from './pages/routines/RoutinesPage';
 import { ProgressPage } from './pages/progress/ProgressPage';
 import { AIAssistantPage } from './pages/assistant/AIAssistantPage';
+import { GuardianPortalPage } from './pages/guardian/GuardianPortalPage';
+import { AdminDashboardPage } from './pages/admin/AdminDashboardPage';
 import { ProtectedRoute } from './components/auth/ProtectedRoute';
 import { useAccessibilityStore } from './stores/accessibilityStore';
 
@@ -75,6 +77,8 @@ export default function App() {
           <Route path="routines" element={<RoutinesPage />} />
           <Route path="progress" element={<ProgressPage />} />
           <Route path="assistant" element={<AIAssistantPage />} />
+          <Route path="guardian" element={<GuardianPortalPage />} />
+          <Route path="admin" element={<AdminDashboardPage />} />
           <Route path="comfort" element={<ComfortPage />} />
         </Route>
 

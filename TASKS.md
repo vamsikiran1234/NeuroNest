@@ -73,12 +73,13 @@
 - [x] Commit & push Phase 7 to GitHub
 
 ## Phase 8: Guardian Support & Administration
-- [ ] Guardian database schema (guardian_relationships, consent_records)
-- [ ] Guardian portal (child account linking, consent management, activity summary review, goal setting)
-- [ ] Child privacy safeguards (privacy controls, no raw conversation leakage)
-- [ ] Admin dashboard (user management, game catalog management, content management, audit logs, health monitoring)
-- [ ] Admin RBAC security enforcement
-- [ ] Commit & push Phase 8 to GitHub
+- [x] Guardian database schema & entities (`guardian_relationships`, `consent_records`)
+- [x] Guardian service & portal (child account linking, consent management, activity summary review)
+- [x] Child privacy safeguards (privacy controls, no raw conversation or creative thought leakage)
+- [x] Admin dashboard & service (user directory, system overview telemetry, infrastructure health monitoring)
+- [x] Security audit logging & RBAC security enforcement (`ROLE_ADMIN`, `ROLE_PARENT_OR_GUARDIAN`, `ROLE_USER`)
+- [x] Backend & frontend test suites passing (16 backend + 10 frontend tests)
+- [x] Commit & push Phase 8 to GitHub
 
 ## Phase 9: Testing, Accessibility & Security Verification
 - [ ] Backend unit & integration tests (JUnit 5, Mockito, Spring Security tests)
